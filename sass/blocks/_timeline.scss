@@ -1,0 +1,151 @@
+.timeline {
+  padding: 80px 0 70px;
+  overflow: hidden;
+
+  @media (max-width: 1140px) {
+    padding: 65px 0;
+  }
+
+  @media (max-width: 899px) {
+    padding: 40px 0;
+  }
+}
+
+.timeline__title {
+  margin-bottom: 70px;
+  text-align: center;
+  padding-left: 90px;
+
+  @media (max-width: 1140px) {
+    margin-bottom: 51px;
+    padding-left: unset;
+  }
+
+  @media (max-width: 899px) {
+    margin-bottom: 41px;
+  }
+}
+
+.timeline__wrapper {
+  width: 901px;
+  margin-left: 153px;
+
+  @media (max-width: 1140px) {
+    width: 774px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 899px) {
+    padding-left: 15px;
+    width: 385px;
+  }
+
+  @media (max-width: 767px) {
+    width: 273px;
+    padding-left: 8px;
+  }
+}
+
+.timeline__step {
+  width: 50%;
+  padding-bottom: 58px;
+
+  @media (max-width: 1140px) {
+    padding-bottom: 67px;
+
+    &:nth-last-child(2) {
+      padding-bottom: 72px;
+    }
+  }
+
+  @media (max-width: 899px) {
+    width: 100%;
+    padding-bottom: 45px;
+
+    &:nth-last-child(2) {
+      padding-bottom: 45px;
+    }
+  }
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+  }
+
+  &::before {
+    width: 4px;
+    top: 0;
+    bottom: 0;
+    border-radius: 4px;
+    background-color: rgb(225, 238, 244);
+  }
+
+  &::after {
+    top: 0;
+    width: 34px;
+    height: 34px;
+    border: 4px solid rgb(225, 238, 244);
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.timeline__step:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__step:last-child::before {
+  display: none;
+}
+
+// Element Odd
+
+.timeline__step:nth-child(odd) {
+  position: relative;
+  padding-right: 56px;
+  text-align: right;
+
+  &::after,
+  &::before {
+    right: 0;
+    transform: translateX(50%);
+
+    @media (max-width: 899px) {
+      left: 0;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 1140px) {
+    padding-right: 37px;
+  }
+
+  @media (max-width: 899px) {
+    padding-right: unset;
+    text-align: unset;
+    padding-left: 27px;
+  }
+}
+
+// Element Even
+
+.timeline__step:nth-child(even) {
+  position: relative;
+  margin-left: auto;
+  padding-left: 52px;
+
+  &::after,
+  &::before {
+    left: 0;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: 1140px) {
+    padding-left: 37px;
+  }
+
+  @media (max-width: 899px) {
+    padding-left: 27px;
+  }
+}

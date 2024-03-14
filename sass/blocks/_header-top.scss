@@ -1,0 +1,136 @@
+.header-top {
+  position: relative;
+
+  padding-top: 60px;
+  padding-bottom: 82px;
+
+  @media (max-width: 1140px) {
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: 899px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.header-top__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top__navigation ul {
+  display: flex;
+  column-gap: 100px;
+
+  @media (max-width: 1140px) {
+    column-gap: 50px;
+  }
+
+  @media (max-width: 899px) {
+    display: none;
+  }
+
+  & a {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #ff543e;
+    }
+
+    @media (max-width: 1140px) {
+      font-size: 18px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #ff543e;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.4s ease-in;
+    }
+
+    &:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
+}
+
+.header-top__title {
+  display: none;
+
+  @media (max-width: 899px) {
+    display: block;
+    margin-right: auto;
+  }
+}
+
+.header-top__icons {
+  display: flex;
+  column-gap: 26px;
+  align-items: center;
+
+  & a:hover {
+    opacity: 0.5;
+  }
+
+  @media (max-width: 1140px) {
+    column-gap: 30px;
+  }
+
+  @media (max-width: 899px) {
+    display: none;
+  }
+}
+
+.header-top__nav-icon {
+  display: none;
+
+  @media (max-width: 899px) {
+    display: block;
+  }
+
+  &--active {
+    position: fixed;
+    right: 15px;
+    z-index: 30;
+  }
+}
+
+.header-top__mobile-menu {
+  display: none;
+
+  @media (max-width: 899px) {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    z-index: 20;
+    opacity: 0;
+
+    background-color: rgba(37, 73, 116, 0.8);
+
+    transition: right 0.2s linear, opacity 0.2s ease-in 0.2s;
+
+    &--active {
+      right: 0;
+      opacity: 1;
+
+      transition: opacity 0.2s ease-in, top 0.2s linear;
+    }
+  }
+}

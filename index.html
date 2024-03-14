@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- encoding -->
+    <meta charset="UTF-8" />
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and SEO -->
+    <title>Portfolio</title>
+    <meta name="description" content="Описание страницы" />
+    <meta name="keywords" content="ключевые слова, фразы" />
+
+    <!-- Libs AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Open Graph -->
+    <!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Туристическое агентство Форест Тревел" />
+    <meta property="og:description" content="Турпоходы по дикой природе" />
+    <meta property="og:image" content="./img/opengraph.jpg" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicon/safari-pinned-tab.svg"
+      color="#1a60cf"
+    />
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta
+      name="msapplication-config"
+      content="./img/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="header-top">
+      <div class="container">
+        <div class="header-top__wrapper">
+          <div class="header-top__navigation">
+            <ul>
+              <li><a href="#">Навыки</a></li>
+              <li><a href="#portfolio">Портфолио</a></li>
+              <li><a href="#timeline">Как я работаю</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="header-top__title">
+            <h4 class="title-h4 title-h4--tiny">Frontend-developer</h4>
+          </div>
+
+          <div class="header-top__icons">
+            <a href="#" target="_blank">
+              <svg class="socials__icons socials__linkedin">
+                <use href="./img/icons/svgSprite.svg#svg-ln"></use>
+              </svg>
+            </a>
+            <a href="https://github.com/PIE89?tab=repositories" target="_blank"
+              ><svg class="socials__icons socials__github">
+                <use href="./img/icons/svgSprite.svg#svg-git"></use>
+              </svg>
+            </a>
+          </div>
+
+          <button class="header-top__nav-icon" id="navIcon">
+            <div class="nav-icon">
+              <div class="nav-icon__middle"></div>
+            </div>
+          </button>
+
+          <div class="header-top__mobile-menu">
+            <div class="mobile-menu__wrapper">
+              <ul class="mobile-menu__nav">
+                <li><a href="#" class="mobile-menu__nav-links">Навыки</a></li>
+                <li>
+                  <a href="#portfolio" class="mobile-menu__nav-links"
+                    >Портфолио</a
+                  >
+                </li>
+                <li>
+                  <a href="#timeline" class="mobile-menu__nav-links"
+                    >Как я работаю</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacts" class="mobile-menu__nav-links"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+
+              <div class="mobile-menu__contacts">
+                <div class="mobile-menu__socials">
+                  <div class="socials">
+                    <!-- Telegram -->
+                    <a href="#">
+                      <svg class="socials__icons socials__tg">
+                        <use href="./img/icons/svgSprite.svg#svg-tg"></use>
+                      </svg>
+                    </a>
+                    <!--// Telegram -->
+                    <!-- VK -->
+                    <a href="#">
+                      <svg class="socials__icons socials__vk">
+                        <use href="./img/icons/svgSprite.svg#svg-vk"></use>
+                      </svg>
+                    </a>
+                    <!--// VK -->
+                    <!-- Facebook -->
+                    <a href="#">
+                      <svg class="socials__icons socials__fb">
+                        <use href="./img/icons/svgSprite.svg#svg-fb"></use>
+                      </svg>
+                    </a>
+                    <!--// Facebook -->
+                    <!-- Instagram -->
+                    <a href="#"
+                      ><object
+                        class="socials__icons socials__inst"
+                        type="image/svg+xml"
+                        data="./img/icons/instagram.svg"
+                        width="48"
+                        height="48"
+                      ></object
+                    ></a>
+                    <!--// Instagram  -->
+                    <!-- Whatsapp -->
+                    <a href="#">
+                      <svg class="socials__icons socials__wa">
+                        <use href="./img/icons/svgSprite.svg#svg-wa"></use>
+                      </svg>
+                    </a>
+                    <!--// Whatsapp -->
+                  </div>
+                </div>
+
+                <div class="mobile-menu__links">
+                  <a href="mailto:yurij.kluchevsky@gmail.com" class="link">
+                    yurij.kluchevsky@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="header">
+        <div class="header__content">
+          <div class="container">
+            <div class="header__content-row">
+              <div class="header__text">
+                <div class="header__title">
+                  <h1 class="title-h1 gradient-border">Иван Попов</h1>
+                </div>
+                <div class="header__description">
+                  <p>
+                    Frontend-разработчик, верстальщик сайтов, веб-разработчик.
+                    Оперативная верстка. Работаю с соблюдением сроков и
+                    выполнением ТЗ.
+                  </p>
+                </div>
+                <div class="header__buttons">
+                  <a href="#skills" class="button button--accent"
+                    >Познакомиться</a
+                  >
+                  <a href="#contacts" class="button">Контакты</a>
+                </div>
+              </div>
+
+              <div class="header__img">
+                <img src="./img/header/header-img.jpeg" alt="header-img" />
+              </div>
+
+              <div class="header__description-text">
+                <p>
+                  Верстальщик сайтов, <br />
+                  веб-разработчик. Оперативная верстка. Работаю с соблюдением
+                  сроков и выполнением ТЗ.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__banner">
+          <img src="./img/bg/header-bg.png" alt="bg" />
+        </div>
+
+        <div class="header__skills" id="skills">
+          <div class="container">
+            <div class="header__skills-row">
+              <div
+                class="header__skills-benefits"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="header__skills-title">
+                  <h3 class="title-h3">Что я умею:</h3>
+                </div>
+                <ul class="header__skills-list">
+                  <li>pixel perfect, полное соответствие макету</li>
+                  <li>верстаю с сеткой или без</li>
+                  <li>адаптивная верстка под мобильные устройства</li>
+                  <li>оптимизация по retina экраны</li>
+                  <li>с Bootstrap и без него</li>
+                  <li>работа c JS</li>
+                  <li>работа с React</li>
+                </ul>
+                <div class="header__skills-button none">
+                  <a href="#" class="button">Смотреть портфолио</a>
+                </div>
+              </div>
+
+              <div
+                class="header__skills-links"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="header__skills-links-title">
+                  <h3 class="title-h3">На связи:</h3>
+                </div>
+                <div class="socials">
+                  <!-- Telegram -->
+                  <a href="https://telegram.me/van_ka88" target="_blank">
+                    <svg class="socials__icons socials__tg">
+                      <use href="./img/icons/svgSprite.svg#svg-tg"></use>
+                    </svg>
+                  </a>
+                  <!--// Telegram -->
+                  <!-- VK -->
+                  <a href="https://vk.com/van_ka1" target="_blank">
+                    <svg class="socials__icons socials__vk">
+                      <use href="./img/icons/svgSprite.svg#svg-vk"></use>
+                    </svg>
+                  </a>
+                  <!--// VK -->
+                  <!-- Facebook -->
+                  <!-- <a href="#" target="_blank">
+                    <svg class="socials__icons socials__fb">
+                      <use href="./img/icons/svgSprite.svg#svg-fb"></use>
+                    </svg>
+                  </a> -->
+                  <!--// Facebook -->
+                  <!-- Instagram -->
+                  <a href="#" target="_blank"
+                    ><object
+                      class="socials__icons socials__inst"
+                      type="image/svg+xml"
+                      data="./img/icons/instagram.svg"
+                      width="48"
+                      height="48"
+                    ></object
+                  ></a>
+                  <!--// Instagram  -->
+                  <!-- Whatsapp -->
+                  <a href="https://wa.me/79119911933" target="_blank">
+                    <svg class="socials__icons socials__wa">
+                      <use href="./img/icons/svgSprite.svg#svg-wa"></use>
+                    </svg>
+                  </a>
+                  <!--// Whatsapp -->
+                </div>
+                <div class="header__skills-links-email">
+                  <a
+                    href="mailto:spyder34@yandex.ru"
+                    class="link"
+                    target="_blank"
+                  >
+                    spyder34@yandex.ru
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="portfolio__title">
+            <h2 class="title-h2 gradient-border">Портфолио</h2>
+          </div>
+
+          <div class="portfolio__filter">
+            <button type="button" data-filter="all">Все</button>
+            <button type="button" data-filter=".html">HTML-верстка</button>
+            <button type="button" data-filter=".js">JavaScript</button>
+            <button type="button" data-filter=".React">React</button>
+          </div>
+
+          <div class="portfolio__wrapper" id="mix-cards">
+            <!-- First card -->
+            <div class="card mix html" data-order="1">
+              <a href="#" class="card__link">
+                <div class="card__img">
+                  <img
+                    src="./img/portfolio/forest-travel.jpg"
+                    alt="forest-travel"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+
+                <h5 class="card__title">Верстка “Форест тревел”</h5>
+                <div class="card__description">
+                  <p>Верстка многостраничного сайта</p>
+                </div>
+              </a>
+            </div>
+            <!--// First card -->
+            <!-- Second card -->
+            <div class="card mix wordpress" data-order="2">
+              <a href="#" class="card__link">
+                <div class="card__img">
+                  <img src="./img/portfolio/unit.jpg" alt="unit" />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+                <h5 class="card__title">Сайт приложения “Юнит”</h5>
+                <div class="card__description">
+                  <p>Верстка лендинга</p>
+                </div>
+              </a>
+            </div>
+            <!--// Second card -->
+            <!-- Third card -->
+            <div class="card card--small mix wordpress" data-order="3">
+              <a href="#" class="card__link">
+                <div class="card__img">
+                  <img src="./img/portfolio/auto-world.jpg" alt="auto-world" />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+                <h5 class="card__title">Верстка “Мир Авто”</h5>
+                <div class="card__description">
+                  <p>Верстка многостраничного сайта</p>
+                </div>
+              </a>
+            </div>
+            <!--// Third card -->
+            <!-- Forth card -->
+            <div class="card card--small mix wordpress" data-order="4">
+              <a href="#" class="card__link">
+                <div class="card__img">
+                  <img
+                    src="./img/portfolio/auto-world2.jpg"
+                    alt="auto-world2"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+                <h5 class="card__title">Верстка “Мир Авто”</h5>
+                <div class="card__description">
+                  <p>Верстка многостраничного сайта</p>
+                </div>
+              </a>
+            </div>
+            <!--// Forth card -->
+            <!-- Fifth card -->
+            <div class="card card--small mix" data-order="5">
+              <a href="#" class="card__link">
+                <div class="card__img">
+                  <img
+                    src="./img/portfolio/auto-world3.jpg"
+                    alt="auto-world3"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+                <h5 class="card__title">Верстка “Мир Авто”</h5>
+                <div class="card__description">
+                  <p>Верстка многостраничного сайта</p>
+                </div>
+              </a>
+            </div>
+            <!--// Fifth card -->
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline" id="timeline">
+        <div class="container">
+          <div class="timeline__title">
+            <h2 class="title-h2 gradient-border">Как я работаю</h2>
+          </div>
+
+          <div class="timeline__wrapper">
+            <!-- First step -->
+            <div
+              class="timeline__step"
+              data-aos="fade-up-right"
+              data-aos-duration="2000"
+            >
+              <div class="step">
+                <div class="step__title">
+                  <h4 class="title-h4 gradient-border">Оцениваю макет</h4>
+                </div>
+                <div class="step__description">
+                  <p>
+                    Оцениваю объем работы, сложность, нюансы. Задаю вопросы.
+                  </p>
+                  <span class="step__description-time">Время: 2 часа</span>
+                </div>
+              </div>
+            </div>
+            <!--// First step -->
+
+            <!-- Second step -->
+            <div
+              class="timeline__step"
+              data-aos="fade-up-left"
+              data-aos-duration="2000"
+            >
+              <div class="step">
+                <div class="step__title">
+                  <h4 class="title-h4 gradient-border">
+                    ТЗ, смета и график работ
+                  </h4>
+                </div>
+                <div class="step__description">
+                  <p>
+                    Согласовываем техническое задание и график работ по проекту.
+                    Осмечиваю стоимость по этапам работы.
+                  </p>
+                  <span
+                    class="step__description-time step__description-time--big"
+                    >Время: 2 - 4 часа</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!--// Second step -->
+
+            <!-- Third step -->
+            <div
+              class="timeline__step"
+              data-aos="fade-up-right"
+              data-aos-duration="2000"
+            >
+              <div class="step">
+                <div class="step__title">
+                  <h4 class="title-h4 gradient-border">
+                    Вы держите руку на пульсе
+                  </h4>
+                </div>
+                <div class="step__description">
+                  <p>
+                    Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы
+                    в любое время можете видеть актуальное состояние проекта и
+                    задач.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--// Third step -->
+
+            <!-- Forth step -->
+            <div
+              class="timeline__step"
+              data-aos="fade-up-left"
+              data-aos-duration="2000"
+            >
+              <div class="step">
+                <div class="step__title step__title--small">
+                  <h4 class="title-h4 gradient-border">Выполняю каждый этап</h4>
+                </div>
+                <div class="step__description">
+                  <p>
+                    Поочередно выполняю каждый этап работы. Передаю результаты.
+                    Заказчик производит поэтапную оплату.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--// Forth step -->
+
+            <!-- Fifth step -->
+            <div
+              class="timeline__step"
+              data-aos="fade-up-right"
+              data-aos-duration="2000"
+            >
+              <div class="step">
+                <div class="step__title">
+                  <h4 class="title-h4 gradient-border">
+                    Финальное ревью проекта
+                  </h4>
+                </div>
+                <div class="step__description">
+                  <p>
+                    Проект готов. Финальное ревью и полировка до идеального
+                    состояния. Передаю файлы проекта, заливаю сайт на хостинг
+                    заказчика.
+                  </p>
+                  <span class="step__description-time">Время: 2 - 4 часа</span>
+                </div>
+              </div>
+            </div>
+            <!--// Fifth step -->
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__title">
+            <h2 class="title-h2 gradient-border">Контакты</h2>
+          </div>
+          <div class="contacts__wrapper">
+            <div class="contacts__information">
+              <div class="contacts__information-description">
+                Если вы ищите специалиста по верстке сайтов или frontend
+                разработчика в команду для работы над проектом — напишите мне.
+              </div>
+              <ul class="contacts__information-list">
+                <li>
+                  <span>Email</span>
+                  <a
+                    href="mailto:spyder34@yandex.ru"
+                    class="link link--contacts"
+                  >
+                    spyder34@yandex.ru
+                  </a>
+                </li>
+                <li>
+                  <span>Телефон</span>
+                  <a href="tel:+79119911933" class="link link--contacts">
+                    +7 (911) 991-19-33
+                  </a>
+                </li>
+              </ul>
+
+              <div class="socials socials--contacts">
+                <!-- Telegram -->
+                <a href="#">
+                  <svg class="socials__icons socials__tg">
+                    <use href="./img/icons/svgSprite.svg#svg-tg"></use>
+                  </svg>
+                </a>
+                <!--// Telegram -->
+                <!-- VK -->
+                <a href="#">
+                  <svg class="socials__icons socials__vk">
+                    <use href="./img/icons/svgSprite.svg#svg-vk"></use>
+                  </svg>
+                </a>
+                <!--// VK -->
+                <!-- Facebook -->
+                <a href="#">
+                  <svg class="socials__icons socials__fb">
+                    <use href="./img/icons/svgSprite.svg#svg-fb"></use>
+                  </svg>
+                </a>
+                <!--// Facebook -->
+                <!-- Instagram -->
+                <a href="#"
+                  ><object
+                    class="socials__icons socials__inst"
+                    type="image/svg+xml"
+                    data="./img/icons/instagram.svg"
+                    width="48"
+                    height="48"
+                  ></object
+                ></a>
+                <!--// Instagram  -->
+                <!-- Whatsapp -->
+                <a href="#">
+                  <svg class="socials__icons socials__wa">
+                    <use href="./img/icons/svgSprite.svg#svg-wa"></use>
+                  </svg>
+                </a>
+                <!--// Whatsapp -->
+              </div>
+            </div>
+
+            <div class="contacts__form">
+              <form class="form">
+                <div class="form__group">
+                  <span
+                    class="form__fake-placeholder form__fake-placeholder--email"
+                    >Ваш Email</span
+                  >
+                  <input
+                    type="email"
+                    class="form__data form__data--input"
+                    name="email"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <span class="form__fake-placeholder">Сообщение</span>
+                  <textarea name="message" id="message" class="form__data">
+                  </textarea>
+                </div>
+
+                <div class="form__group">
+                  <button type="submit" class="button button--accent">
+                    Отправить
+                  </button>
+                </div>
+              </form>
+              <div id="answer"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__copyright">&#169; 2024 — Иван Попов</div>
+        <div class="footer__description">
+          <p>
+            Веб-разработчик из Санкт-Петербурга, занимаюсь версткой и созданием
+            сайтов.
+          </p>
+          <p>
+            Этот сайт сделал в рамках прохождения обучения по верстке на курсах
+            от <a href="#" class="white-link">WebCademy.ru</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./libs/jquery-3.7.1.min.js"></script>
+    <script src="./libs/jquery.validate.min.js"></script>
+    <script src="./libs/mixitup.min.js"></script>
+    <script src="./js/mobile-nav.js"></script>
+    <script src="./js/contacts.js"></script>
+    <script src="./js/mixItUp.js"></script>
+  </body>
+</html>

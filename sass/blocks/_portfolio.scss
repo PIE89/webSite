@@ -1,0 +1,89 @@
+.portfolio {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  background-image: linear-gradient(rgb(245, 251, 255), rgb(244, 248, 249));
+
+  @media (max-width: 1140px) {
+    padding-top: 40px;
+    padding-bottom: 61px;
+  }
+
+  @media (max-width: 899px) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+.portfolio__title {
+  margin-bottom: 65px;
+
+  @media (max-width: 1140px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 899px) {
+    margin-bottom: 30px;
+    padding-left: 2px;
+  }
+}
+
+.portfolio__filter {
+  margin-bottom: 33px;
+  display: flex;
+  column-gap: 70px;
+
+  @media (max-width: 767px) {
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  & button {
+    color: rgb(158, 194, 208);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.mixitup-control-active {
+  color: rgb(0, 0, 0) !important;
+}
+
+.portfolio__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  column-gap: 30px;
+  row-gap: 50px;
+
+  @media (max-width: 1140px) {
+    row-gap: 40px;
+  }
+
+  @media (max-width: 899px) {
+    row-gap: 20px;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+.col {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
