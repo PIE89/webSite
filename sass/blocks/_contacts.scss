@@ -1,4 +1,6 @@
 .contacts {
+  position: relative;
+  z-index: 10;
   padding: 70px 0 90px;
   background: linear-gradient(rgb(245, 251, 255), rgb(244, 248, 249));
   overflow: hidden;
@@ -9,6 +11,21 @@
 
   @media (max-width: 899px) {
     padding: 40px 0;
+  }
+}
+
+.contacts__dots {
+  position: absolute;
+  z-index: -1;
+  right: 7px;
+
+  @media (max-width: 1331px) {
+    right: 0px;
+    top: 30px;
+  }
+
+  @media (max-width: 899px) {
+    display: none;
   }
 }
 
@@ -128,28 +145,6 @@
 
     @media (max-width: 899px) {
       font-size: 16px;
-    }
-  }
-}
-
-.contacts__form {
-  position: relative;
-  z-index: 10;
-
-  &::after {
-    position: absolute;
-    z-index: -1;
-    content: url("./../img/icons/contacts-icon.svg");
-    right: -109px;
-    top: -113px;
-
-    @media (max-width: 1331px) {
-      right: 0px;
-      top: -90px;
-    }
-
-    @media (max-width: 899px) {
-      display: none;
     }
   }
 }

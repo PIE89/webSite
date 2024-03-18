@@ -38,3 +38,20 @@
     }
   }
 }
+
+.back-top {
+  position: fixed;
+  z-index: 20;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  right: 50px;
+  bottom: 50px;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50px;
+  font-size: 40px;
+  background-color: red;
+}

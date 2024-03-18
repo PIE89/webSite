@@ -739,6 +739,21 @@ body > * {
   background-color: rgb(245, 210, 45);
 }
 
+.back-top {
+  position: fixed;
+  z-index: 20;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  right: 50px;
+  bottom: 50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  font-size: 40px;
+  background-color: red;
+}
+
 .socials {
   display: flex;
   align-items: center;
@@ -1368,6 +1383,8 @@ body > * {
 }
 
 .contacts {
+  position: relative;
+  z-index: 10;
   padding: 70px 0 90px;
   background: linear-gradient(rgb(245, 251, 255), rgb(244, 248, 249));
   overflow: hidden;
@@ -1380,6 +1397,23 @@ body > * {
 @media (max-width: 899px) {
   .contacts {
     padding: 40px 0;
+  }
+}
+
+.contacts__dots {
+  position: absolute;
+  z-index: -1;
+  right: 7px;
+}
+@media (max-width: 1331px) {
+  .contacts__dots {
+    right: 0px;
+    top: 30px;
+  }
+}
+@media (max-width: 899px) {
+  .contacts__dots {
+    display: none;
   }
 }
 
@@ -1520,29 +1554,6 @@ body > * {
 @media (max-width: 899px) {
   .contacts__information-list span {
     font-size: 16px;
-  }
-}
-
-.contacts__form {
-  position: relative;
-  z-index: 10;
-}
-.contacts__form::after {
-  position: absolute;
-  z-index: -1;
-  content: url("./../img/icons/contacts-icon.svg");
-  right: -109px;
-  top: -113px;
-}
-@media (max-width: 1331px) {
-  .contacts__form::after {
-    right: 0px;
-    top: -90px;
-  }
-}
-@media (max-width: 899px) {
-  .contacts__form::after {
-    display: none;
   }
 }
 

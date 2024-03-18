@@ -55,7 +55,7 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <header class="header-top">
+    <header class="header-top" id="top">
       <div class="container">
         <div class="header-top__wrapper">
           <div class="header-top__navigation">
@@ -680,6 +680,11 @@
 
       <section class="contacts" id="contacts">
         <div class="container">
+          <img
+            src="./img/icons/contacts-icon.svg"
+            class="contacts__dots"
+            alt="contacts-icon"
+          />
           <div class="contacts__title">
             <h2 class="title-h2 gradient-border">Контакты</h2>
           </div>
@@ -799,6 +804,8 @@
       </div>
     </footer>
 
+    <a href="#top" class="back-top">&#8593;</a>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -809,5 +816,7 @@
     <script src="./js/mobile-nav.js"></script>
     <script src="./js/contacts.js"></script>
     <script src="./js/mixItUp.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/button-scroll.js"></script>
   </body>
 </html>
