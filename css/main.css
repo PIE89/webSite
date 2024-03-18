@@ -744,14 +744,14 @@ body > * {
   z-index: 20;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   right: 50px;
   bottom: 50px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
   font-size: 40px;
-  background-color: red;
+  background-color: rgb(176, 208, 215);
 }
 
 .socials {

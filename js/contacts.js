@@ -20,46 +20,45 @@ inputs.forEach((input) => {
 // FORM VALIDATE
 
 $(".form").validate({
-    rules: {
-      email: {
-        required: true,
-        email: true,
-      },
-      message: {
-        required: true,
-      },
+  rules: {
+    email: {
+      required: true,
+      email: true,
     },
-  
-    messages: {
-      email: {
-        required: "Введите email",
-        email: "Отсутствует символ @",
-      },
-      message: {
-        required: "Текст не должен быть пустым",
-      },
+    message: {
+      required: true,
     },
-    submitHandler: function (form) {
-      ajaxFormSubmit();
+  },
+
+  messages: {
+    email: {
+      required: "Введите email",
+      email: "Отсутствует символ @",
+    },
+    message: {
+      required: "Текст не должен быть пустым",
+    },
+  },
+  submitHandler: function (form) {
+    ajaxFormSubmit();
+  },
+});
+
+function ajaxFormSubmit() {
+  let string = $(".contact-form").serialize(); // Соханяем данные введенные в форму в строку.
+
+  //Формируем ajax запрос
+  $.ajax({
+    type: "POST", // Тип запроса - POST
+    url: "php/mail.php", // Куда отправляем запрос
+    data: string, // Какие даные отправляем, в данном случае отправляем переменную string
+
+    // Функция если все прошло успешно
+    success: function (html) {
+      $(".contact-form").slideUp(800);
+      $("#answer").html(html);
     },
   });
-  
-  function ajaxFormSubmit() {
-    let string = $(".contact-form").serialize(); // Соханяем данные введенные в форму в строку.
-  
-    //Формируем ajax запрос
-    $.ajax({
-      type: "POST", // Тип запроса - POST
-      url: "php/mail.php", // Куда отправляем запрос
-      data: string, // Какие даные отправляем, в данном случае отправляем переменную string
-  
-      // Функция если все прошло успешно
-      success: function (html) {
-        $(".contact-form").slideUp(800);
-        $("#answer").html(html);
-      },
-    });
-    // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
-    return false;
-  }
-  
+  // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
+  return false;
+}
