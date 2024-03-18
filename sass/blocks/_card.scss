@@ -111,6 +111,15 @@
   @media (max-width: 899px) {
     font-size: 14px;
   }
+
+  & :not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.card__description-link {
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 .card--small {
