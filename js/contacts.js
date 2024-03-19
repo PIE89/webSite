@@ -21,7 +21,7 @@ inputs.forEach((input) => {
 
 $(document).ready(function () {
   //FORM VALIDATE
-  $(".contact-form").validate({
+  $(".form").validate({
     rules: {
       email: {
         required: true,
@@ -51,7 +51,7 @@ $(document).ready(function () {
   // Функция AJAX запрса на сервер
 
   function ajaxFormSubmit() {
-    let string = $(".contact-form").serialize(); // Соханяем данные введенные в форму в строку.
+    let string = $(".form").serialize(); // Соханяем данные введенные в форму в строку.
 
     //Формируем ajax запрос
     $.ajax({
@@ -61,7 +61,7 @@ $(document).ready(function () {
 
       // Функция если все прошло успешно
       success: function (html) {
-        $(".contact-form").slideUp(800);
+        $(".form").slideUp(800);
         $("#answer").html(html);
       },
     });

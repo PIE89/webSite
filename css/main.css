@@ -1435,12 +1435,13 @@ body > * {
 
 .contacts__wrapper {
   display: flex;
-  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 @media (max-width: 1140px) {
   .contacts__wrapper {
-    -moz-column-gap: unset;
-         column-gap: unset;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
 }
 @media (max-width: 899px) {
@@ -1554,6 +1555,21 @@ body > * {
 @media (max-width: 899px) {
   .contacts__information-list span {
     font-size: 16px;
+  }
+}
+
+.contact-form__success {
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media (max-width: 1140px) {
+  .contact-form__success {
+    font-size: 16px;
+  }
+}
+@media (max-width: 899px) {
+  .contact-form__success {
+    font-size: 14px;
   }
 }
 
