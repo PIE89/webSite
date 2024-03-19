@@ -11,7 +11,8 @@
     opacity: 1;
   }
 
-  .card__title {
+  .card__title,
+  .card__description {
     color: rgb(239, 104, 87);
   }
 }
@@ -29,6 +30,7 @@
     width: 540px;
     height: 370px;
     object-fit: cover;
+    object-position: center;
 
     @media (max-width: 1140px) {
       width: 420px;
@@ -118,8 +120,22 @@
 }
 
 .card__description-link {
+  margin-top: 10px;
   text-decoration: underline;
   font-weight: 600;
+  font-size: 20px;
+
+  &:hover {
+    color: rgb(239, 104, 87);
+  }
+
+  @media (max-width: 1140px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 899px) {
+    font-size: 14px;
+  }
 }
 
 .card--small {
@@ -136,6 +152,7 @@
       width: 350px;
       height: 220px;
       object-fit: cover;
+      object-position: center;
 
       @media (max-width: 1140px) {
         width: 270px;
@@ -166,14 +183,6 @@
     @media (max-width: 1140px) {
       margin-bottom: 4px;
       font-size: 18px;
-    }
-  }
-
-  .card__description {
-    font-size: 18px;
-
-    @media (max-width: 1140px) {
-      font-size: 14px;
     }
   }
 }

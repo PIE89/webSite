@@ -57,7 +57,7 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 mail($admin_email, $form_subject, $message, $headers );
 
 // Saving user data in file
-send_user_data_in_txt_file ($message);
+// send_user_data_in_txt_file ($message); Если раскомментировать, то данные подгружаются в файл form_fill на хосте, по факту скрипт рабочий
 
 // header('location: ../thankyou.php');
 

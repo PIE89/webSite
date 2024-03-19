@@ -60,7 +60,7 @@
         <div class="header-top__wrapper">
           <div class="header-top__navigation">
             <ul>
-              <li><a href="#">Навыки</a></li>
+              <li><a href="#skills">Навыки</a></li>
               <li><a href="#portfolio">Портфолио</a></li>
               <li><a href="#timeline">Как я работаю</a></li>
               <li><a href="#contacts">Контакты</a></li>
@@ -72,12 +72,12 @@
           </div>
 
           <div class="header-top__icons">
-            <a href="#" target="_blank">
+            <!-- <a href="#" target="_blank">
               <svg class="socials__icons socials__linkedin">
                 <use href="./img/icons/svgSprite.svg#svg-ln"></use>
               </svg>
-            </a>
-            <a href="https://github.com/PIE89?tab=repositories" target="_blank"
+            </a> -->
+            <a href="https://github.com/PIE89" target="_blank"
               ><svg class="socials__icons socials__github">
                 <use href="./img/icons/svgSprite.svg#svg-git"></use>
               </svg>
@@ -93,7 +93,9 @@
           <div class="header-top__mobile-menu">
             <div class="mobile-menu__wrapper">
               <ul class="mobile-menu__nav">
-                <li><a href="#" class="mobile-menu__nav-links">Навыки</a></li>
+                <li>
+                  <a href="#skills" class="mobile-menu__nav-links">Навыки</a>
+                </li>
                 <li>
                   <a href="#portfolio" class="mobile-menu__nav-links"
                     >Портфолио</a
@@ -115,28 +117,28 @@
                 <div class="mobile-menu__socials">
                   <div class="socials">
                     <!-- Telegram -->
-                    <a href="#">
+                    <a href="https://telegram.me/van_ka88" target="_blank">
                       <svg class="socials__icons socials__tg">
                         <use href="./img/icons/svgSprite.svg#svg-tg"></use>
                       </svg>
                     </a>
                     <!--// Telegram -->
                     <!-- VK -->
-                    <a href="#">
+                    <a href="https://vk.com/van_ka1" target="_blank">
                       <svg class="socials__icons socials__vk">
                         <use href="./img/icons/svgSprite.svg#svg-vk"></use>
                       </svg>
                     </a>
                     <!--// VK -->
                     <!-- Facebook -->
-                    <a href="#">
+                    <!-- <a href="#">
                       <svg class="socials__icons socials__fb">
                         <use href="./img/icons/svgSprite.svg#svg-fb"></use>
                       </svg>
-                    </a>
+                    </a> -->
                     <!--// Facebook -->
                     <!-- Instagram -->
-                    <a href="#"
+                    <!-- <a href="#"
                       ><object
                         class="socials__icons socials__inst"
                         type="image/svg+xml"
@@ -144,10 +146,10 @@
                         width="48"
                         height="48"
                       ></object
-                    ></a>
+                    ></a> -->
                     <!--// Instagram  -->
                     <!-- Whatsapp -->
-                    <a href="#">
+                    <a href="https://wa.me/79119911933" target="_blank">
                       <svg class="socials__icons socials__wa">
                         <use href="./img/icons/svgSprite.svg#svg-wa"></use>
                       </svg>
@@ -157,8 +159,12 @@
                 </div>
 
                 <div class="mobile-menu__links">
-                  <a href="mailto:yurij.kluchevsky@gmail.com" class="link">
-                    yurij.kluchevsky@gmail.com
+                  <a
+                    href="mailto:spyder34@yandex.ru"
+                    class="link"
+                    target="_blank"
+                  >
+                    spyder34@yandex.ru
                   </a>
                 </div>
               </div>
@@ -267,7 +273,7 @@
                   </a> -->
                   <!--// Facebook -->
                   <!-- Instagram -->
-                  <a href="#" target="_blank"
+                  <!-- <a href="#" target="_blank"
                     ><object
                       class="socials__icons socials__inst"
                       type="image/svg+xml"
@@ -275,7 +281,7 @@
                       width="48"
                       height="48"
                     ></object
-                  ></a>
+                  ></a> -->
                   <!--// Instagram  -->
                   <!-- Whatsapp -->
                   <a href="https://wa.me/79119911933" target="_blank">
@@ -333,14 +339,14 @@
                 <h5 class="card__title">Проект CRM</h5>
                 <div class="card__description">
                   <p>CRM проект написанный на React + сервер на Glitch</p>
-                  <a
-                    class="card__description-link"
-                    href="https://github.com/PIE89/-js-server-project-CRM"
-                    target="_blank"
-                    >Репозиторий на GitHub</a
-                  >
                 </div>
               </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/-js-server-project-CRM"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
             </div>
             <!--// First card -->
 
@@ -364,14 +370,14 @@
                     SPA приложение написанное на языке JavaScript, архитектурный
                     паттерн MVC + запросы на сервер
                   </p>
-                  <a
-                    class="card__description-link"
-                    href="https://github.com/PIE89/flat-project_js"
-                    target="_blank"
-                    >Репозиторий на GitHub</a
-                  >
                 </div>
               </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/flat-project_js"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
             </div>
             <!--// Second card -->
 
@@ -384,7 +390,7 @@
               >
                 <div class="card__img">
                   <img
-                    src="./img/portfolio/forest_travel.png"
+                    src="./img/portfolio/forest-travel.jpeg"
                     alt="forest_travel"
                   />
                   <span class="card__button-like">Смотреть проект</span>
@@ -394,14 +400,14 @@
                 </h5>
                 <div class="card__description">
                   <p>Верстка сайт</p>
-                  <a
-                    class="card__description-link"
-                    href="https://github.com/PIE89/forest_travel"
-                    target="_blank"
-                    >Репозиторий на GitHub</a
-                  >
                 </div>
               </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/forest_travel"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
             </div>
             <!--// Third card -->
 
@@ -414,7 +420,7 @@
               >
                 <div class="card__img">
                   <img
-                    src="./img/portfolio/unit_project.png"
+                    src="./img/portfolio/unit_project.jpeg"
                     alt="unit_project"
                   />
                   <span class="card__button-like">Смотреть проект</span>
@@ -425,14 +431,14 @@
                     HTML + SCSS с приминением BEM-naming, мобильная адаптация,
                     OWLCarousel(JQuery)
                   </p>
-                  <a
-                    class="card__description-link"
-                    href="https://github.com/PIE89/unit_project"
-                    target="_blank"
-                    >Репозиторий на GitHub</a
-                  >
                 </div>
               </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/unit_project"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
             </div>
             <!--// Forth card -->
 
@@ -445,7 +451,7 @@
               >
                 <div class="card__img">
                   <img
-                    src="./img/portfolio/booking_gulp.png"
+                    src="./img/portfolio/booking_gulp.jpeg"
                     alt="booking_gulp"
                   />
                   <span class="card__button-like">Смотреть проект</span>
@@ -458,14 +464,14 @@
                     Проект реализован на gulp, bootstrap4 верстка, +
                     fancybox(jQuery) - слайдер отображения картинок
                   </p>
-                  <a
-                    class="card__description-link"
-                    href="https://github.com/PIE89/booking_site"
-                    target="_blank"
-                    >Репозиторий на GitHub</a
-                  >
                 </div>
               </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/booking_site"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
             </div>
             <!--// Fifth card -->
 
@@ -477,7 +483,7 @@
                 target="_blank"
               >
                 <div class="card__img">
-                  <img src="./img/portfolio/weatherApp.png" alt="weatherApp" />
+                  <img src="./img/portfolio/weatherApp.jpeg" alt="weatherApp" />
                   <span class="card__button-like">Смотреть проект</span>
                 </div>
                 <h5 class="card__title">Проект прогноза погоды</h5>
@@ -485,14 +491,14 @@
                   <p>
                     Проект написанный на html, css + fetch запросы на сервер
                   </p>
-                  <a
-                    class="card__description-link"
-                    href="https://github.com/PIE89/flat-project_js"
-                    target="_blank"
-                    >Репозиторий на GitHub</a
-                  >
                 </div>
               </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/flat-project_js"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
             </div>
             <!--// Sixth card -->
 
@@ -504,7 +510,7 @@
                 target="_blank"
               >
                 <div class="card__img">
-                  <img src="./img/portfolio/todo-list.png" alt="todo-list" />
+                  <img src="./img/portfolio/todo-list.jpeg" alt="todo-list" />
                   <span class="card__button-like">Смотреть проект</span>
                 </div>
                 <h5 class="card__title">ToDO-List</h5>
@@ -513,14 +519,14 @@
                     Проект написанные на JavaScript с добавлением данным в
                     LocalStorage
                   </p>
-                  <a
-                    class="card__description-link"
-                    href="https://github.com/PIE89/todo_list_js"
-                    target="_blank"
-                    >Репозиторий на GitHub</a
-                  >
                 </div>
               </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/todo_list_js"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
             </div>
             <!--// Seventh card -->
 
@@ -533,7 +539,7 @@
               >
                 <div class="card__img">
                   <img
-                    src="./img/portfolio/travel-slider.png"
+                    src="./img/portfolio/travel-slider.jpeg"
                     alt="travel-slider"
                   />
                   <span class="card__button-like">Смотреть проект</span>
@@ -541,14 +547,14 @@
                 <h5 class="card__title">Travel-Slider</h5>
                 <div class="card__description">
                   <p>Проект написанные на Gulp c добавлением Slider</p>
-                  <a
-                    class="card__description-link"
-                    href="https://github.com/PIE89/slider-reference"
-                    target="_blank"
-                    >Репозиторий на GitHub</a
-                  >
                 </div>
               </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/slider-reference"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
             </div>
             <!--// Eight card -->
           </div>
@@ -704,38 +710,32 @@
                     spyder34@yandex.ru
                   </a>
                 </li>
-                <li>
-                  <span>Телефон</span>
-                  <a href="tel:+79119911933" class="link link--contacts">
-                    +7 (911) 991-19-33
-                  </a>
-                </li>
               </ul>
 
               <div class="socials socials--contacts">
                 <!-- Telegram -->
-                <a href="#">
+                <a href="https://telegram.me/van_ka88" target="_blank">
                   <svg class="socials__icons socials__tg">
                     <use href="./img/icons/svgSprite.svg#svg-tg"></use>
                   </svg>
                 </a>
                 <!--// Telegram -->
                 <!-- VK -->
-                <a href="#">
+                <a href="https://vk.com/van_ka1" target="_blank">
                   <svg class="socials__icons socials__vk">
                     <use href="./img/icons/svgSprite.svg#svg-vk"></use>
                   </svg>
                 </a>
                 <!--// VK -->
                 <!-- Facebook -->
-                <a href="#">
+                <!-- <a href="#">
                   <svg class="socials__icons socials__fb">
                     <use href="./img/icons/svgSprite.svg#svg-fb"></use>
                   </svg>
-                </a>
+                </a> -->
                 <!--// Facebook -->
                 <!-- Instagram -->
-                <a href="#"
+                <!-- <a href="#"
                   ><object
                     class="socials__icons socials__inst"
                     type="image/svg+xml"
@@ -743,10 +743,10 @@
                     width="48"
                     height="48"
                   ></object
-                ></a>
+                ></a> -->
                 <!--// Instagram  -->
                 <!-- Whatsapp -->
-                <a href="#">
+                <a href="https://wa.me/79119911933" target="_blank">
                   <svg class="socials__icons socials__wa">
                     <use href="./img/icons/svgSprite.svg#svg-wa"></use>
                   </svg>
@@ -771,8 +771,11 @@
 
                 <div class="form__group">
                   <span class="form__fake-placeholder">Сообщение</span>
-                  <textarea name="message" id="message" class="form__data">
-                  </textarea>
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="form__data"
+                  ></textarea>
                 </div>
 
                 <div class="form__group">

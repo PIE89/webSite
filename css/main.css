@@ -1002,7 +1002,8 @@ body > * {
 .card__link:hover .card__button-like {
   opacity: 1;
 }
-.card__link:hover .card__title {
+.card__link:hover .card__title,
+.card__link:hover .card__description {
   color: rgb(239, 104, 87);
 }
 
@@ -1021,6 +1022,8 @@ body > * {
   height: 370px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 @media (max-width: 1140px) {
   .card__img img {
@@ -1109,8 +1112,23 @@ body > * {
 }
 
 .card__description-link {
+  margin-top: 10px;
   text-decoration: underline;
   font-weight: 600;
+  font-size: 20px;
+}
+.card__description-link:hover {
+  color: rgb(239, 104, 87);
+}
+@media (max-width: 1140px) {
+  .card__description-link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 899px) {
+  .card__description-link {
+    font-size: 14px;
+  }
 }
 
 .card--small {
@@ -1129,6 +1147,8 @@ body > * {
   height: 220px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 @media (max-width: 1140px) {
   .card--small .card__img img {
@@ -1160,14 +1180,6 @@ body > * {
   .card--small .card__title {
     margin-bottom: 4px;
     font-size: 18px;
-  }
-}
-.card--small .card__description {
-  font-size: 18px;
-}
-@media (max-width: 1140px) {
-  .card--small .card__description {
-    font-size: 14px;
   }
 }
 
@@ -1760,6 +1772,8 @@ body > * {
 }
 
 .form__data {
+  outline: none;
+  resize: none;
   width: 440px;
   height: 162px;
   color: rgb(0, 0, 0);
