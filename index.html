@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <!-- encoding -->
     <meta charset="UTF-8" />
     <!-- Mobile support -->
@@ -10,7 +9,10 @@
     <!-- Title and SEO -->
     <title>Сайт Portfolio</title>
     <meta name="description" content="Сайт портфолио Ивана Попова" />
-    <meta name="keywords" content="Frontend-developer Frontend-разработчик сайт портфолио разработчик" />
+    <meta
+      name="keywords"
+      content="Frontend-developer Frontend-разработчик сайт портфолио разработчик"
+    />
 
     <!-- Libs AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -26,93 +28,118 @@
     <meta property="og:image" content="./img/opengraph.jpg" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="./img/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="./img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header-top" id="top">
-        <div class="container">
-            <div class="header-top__wrapper">
-                <div class="header-top__navigation">
-                    <ul>
-                        <li><a href="#skills">Навыки</a></li>
-                        <li><a href="#portfolio">Портфолио</a></li>
-                        <li><a href="#timeline">Как я работаю</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="header-top__wrapper">
+          <div class="header-top__navigation">
+            <ul>
+              <li><a href="#skills">Навыки</a></li>
+              <li><a href="#portfolio">Портфолио</a></li>
+              <li><a href="#timeline">Как я работаю</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
 
-                <div class="header-top__title">
-                    <h4 class="title-h4 title-h4--tiny">Frontend-developer</h4>
-                </div>
+          <div class="header-top__title">
+            <h4 class="title-h4 title-h4--tiny">Frontend-developer</h4>
+          </div>
 
-                <div class="header-top__icons">
-                    <!-- <a href="#" target="_blank">
+          <div class="header-top__icons">
+            <!-- <a href="#" target="_blank">
               <svg class="socials__icons socials__linkedin">
                 <use href="./img/icons/svgSprite.svg#svg-ln"></use>
               </svg>
             </a> -->
-                    <a href="https://github.com/PIE89" target="_blank"><svg class="socials__icons socials__github">
-                            <use href="./img/icons/svgSprite.svg#svg-git"></use>
-                        </svg>
+            <a href="https://github.com/PIE89" target="_blank"
+              ><svg class="socials__icons socials__github">
+                <use href="./img/icons/svgSprite.svg#svg-git"></use>
+              </svg>
+            </a>
+          </div>
+
+          <button class="header-top__nav-icon" id="navIcon">
+            <div class="nav-icon">
+              <div class="nav-icon__middle"></div>
+            </div>
+          </button>
+
+          <div class="header-top__mobile-menu">
+            <div class="mobile-menu__wrapper">
+              <ul class="mobile-menu__nav">
+                <li>
+                  <a href="#skills" class="mobile-menu__nav-links">Навыки</a>
+                </li>
+                <li>
+                  <a href="#portfolio" class="mobile-menu__nav-links"
+                    >Портфолио</a
+                  >
+                </li>
+                <li>
+                  <a href="#timeline" class="mobile-menu__nav-links"
+                    >Как я работаю</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacts" class="mobile-menu__nav-links"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+
+              <div class="mobile-menu__contacts">
+                <div class="mobile-menu__socials">
+                  <div class="socials">
+                    <!-- Telegram -->
+                    <a href="https://telegram.me/van_ka88" target="_blank">
+                      <svg class="socials__icons socials__tg">
+                        <use href="./img/icons/svgSprite.svg#svg-tg"></use>
+                      </svg>
                     </a>
-                </div>
-
-                <button class="header-top__nav-icon" id="navIcon">
-                    <div class="nav-icon">
-                        <div class="nav-icon__middle"></div>
-                    </div>
-                </button>
-
-                <div class="header-top__mobile-menu">
-                    <div class="mobile-menu__wrapper">
-                        <ul class="mobile-menu__nav">
-                            <li>
-                                <a href="#skills" class="mobile-menu__nav-links">Навыки</a>
-                            </li>
-                            <li>
-                                <a href="#portfolio" class="mobile-menu__nav-links">Портфолио</a>
-                            </li>
-                            <li>
-                                <a href="#timeline" class="mobile-menu__nav-links">Как я работаю</a>
-                            </li>
-                            <li>
-                                <a href="#contacts" class="mobile-menu__nav-links">Контакты</a>
-                            </li>
-                        </ul>
-
-                        <div class="mobile-menu__contacts">
-                            <div class="mobile-menu__socials">
-                                <div class="socials">
-                                    <!-- Telegram -->
-                                    <a href="https://telegram.me/van_ka88" target="_blank">
-                                        <svg class="socials__icons socials__tg">
-                                            <use href="./img/icons/svgSprite.svg#svg-tg"></use>
-                                        </svg>
-                                    </a>
-                                    <!--// Telegram -->
-                                    <!-- VK -->
-                                    <a href="https://vk.com/van_ka1" target="_blank">
-                                        <svg class="socials__icons socials__vk">
-                                            <use href="./img/icons/svgSprite.svg#svg-vk"></use>
-                                        </svg>
-                                    </a>
-                                    <!--// VK -->
-                                    <!-- Facebook -->
-                                    <!-- <a href="#">
+                    <!--// Telegram -->
+                    <!-- VK -->
+                    <a href="https://vk.com/van_ka1" target="_blank">
+                      <svg class="socials__icons socials__vk">
+                        <use href="./img/icons/svgSprite.svg#svg-vk"></use>
+                      </svg>
+                    </a>
+                    <!--// VK -->
+                    <!-- Facebook -->
+                    <!-- <a href="#">
                       <svg class="socials__icons socials__fb">
                         <use href="./img/icons/svgSprite.svg#svg-fb"></use>
                       </svg>
                     </a> -->
-                                    <!--// Facebook -->
-                                    <!-- Instagram -->
-                                    <!-- <a href="#"
+                    <!--// Facebook -->
+                    <!-- Instagram -->
+                    <!-- <a href="#"
                       ><object
                         class="socials__icons socials__inst"
                         type="image/svg+xml"
@@ -121,119 +148,133 @@
                         height="48"
                       ></object
                     ></a> -->
-                                    <!--// Instagram  -->
-                                    <!-- Whatsapp -->
-                                    <a href="https://wa.me/79119911933" target="_blank">
-                                        <svg class="socials__icons socials__wa">
-                                            <use href="./img/icons/svgSprite.svg#svg-wa"></use>
-                                        </svg>
-                                    </a>
-                                    <!--// Whatsapp -->
-                                </div>
-                            </div>
-
-                            <div class="mobile-menu__links">
-                                <a href="mailto:spyder34@yandex.ru" class="link" target="_blank">
-                                    spyder34@yandex.ru
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <!--// Instagram  -->
+                    <!-- Whatsapp -->
+                    <a href="https://wa.me/79119911933" target="_blank">
+                      <svg class="socials__icons socials__wa">
+                        <use href="./img/icons/svgSprite.svg#svg-wa"></use>
+                      </svg>
+                    </a>
+                    <!--// Whatsapp -->
+                  </div>
                 </div>
+
+                <div class="mobile-menu__links">
+                  <a
+                    href="mailto:spyder34@yandex.ru"
+                    class="link"
+                    target="_blank"
+                  >
+                    spyder34@yandex.ru
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <main>
-        <section class="header">
-            <div class="header__content">
-                <div class="container">
-                    <div class="header__content-row">
-                        <div class="header__text">
-                            <div class="header__title">
-                                <h1 class="title-h1 gradient-border">Иван Попов</h1>
-                            </div>
-                            <div class="header__description">
-                                <p>
-                                    Frontend-разработчик, верстальщик сайтов, веб-разработчик.
-                                    Оперативная верстка. Работаю с соблюдением сроков и
-                                    выполнением ТЗ.
-                                </p>
-                            </div>
-                            <div class="header__buttons">
-                                <a href="#skills" class="button button--accent">Познакомиться</a>
-                                <a href="#contacts" class="button">Контакты</a>
-                            </div>
-                        </div>
-
-                        <div class="header__img">
-                            <img src="./img/header/header-img.jpeg" alt="header-img" />
-                        </div>
-
-                        <div class="header__description-text">
-                            <p>
-                                Верстальщик сайтов, <br />
-                                веб-разработчик. Оперативная верстка. Работаю с соблюдением
-                                сроков и выполнением ТЗ.
-                            </p>
-                        </div>
-                    </div>
+      <section class="header">
+        <div class="header__content">
+          <div class="container">
+            <div class="header__content-row">
+              <div class="header__text">
+                <div class="header__title">
+                  <h1 class="title-h1 gradient-border">Иван Попов</h1>
                 </div>
+                <div class="header__description">
+                  <p>
+                    Frontend-разработчик, верстальщик сайтов, веб-разработчик.
+                    Оперативная верстка. Работаю с соблюдением сроков и
+                    выполнением ТЗ.
+                  </p>
+                </div>
+                <div class="header__buttons">
+                  <a href="#skills" class="button button--accent"
+                    >Познакомиться</a
+                  >
+                  <a href="#contacts" class="button">Контакты</a>
+                </div>
+              </div>
+
+              <div class="header__img">
+                <img src="./img/header/header-img.jpeg" alt="header-img" />
+              </div>
+
+              <div class="header__description-text">
+                <p>
+                  Верстальщик сайтов, <br />
+                  веб-разработчик. Оперативная верстка. Работаю с соблюдением
+                  сроков и выполнением ТЗ.
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="header__banner">
-                <img src="./img/bg/header-bg.png" alt="bg" />
-            </div>
+        <div class="header__banner">
+          <img src="./img/bg/header-bg.png" alt="bg" />
+        </div>
 
-            <div class="header__skills" id="skills">
-                <div class="container">
-                    <div class="header__skills-row">
-                        <div class="header__skills-benefits" data-aos="fade-right" data-aos-duration="2000">
-                            <div class="header__skills-title">
-                                <h3 class="title-h3">Что я умею:</h3>
-                            </div>
-                            <ul class="header__skills-list">
-                                <li>pixel perfect, полное соответствие макету</li>
-                                <li>верстаю с сеткой или без</li>
-                                <li>адаптивная верстка под мобильные устройства</li>
-                                <li>оптимизация по retina экраны</li>
-                                <li>с Bootstrap и без него</li>
-                                <li>работа c JS</li>
-                                <li>работа с React</li>
-                            </ul>
-                            <div class="header__skills-button none">
-                                <a href="#" class="button">Смотреть портфолио</a>
-                            </div>
-                        </div>
+        <div class="header__skills" id="skills">
+          <div class="container">
+            <div class="header__skills-row">
+              <div
+                class="header__skills-benefits"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="header__skills-title">
+                  <h3 class="title-h3">Что я умею:</h3>
+                </div>
+                <ul class="header__skills-list">
+                  <li>pixel perfect, полное соответствие макету</li>
+                  <li>верстаю с сеткой или без</li>
+                  <li>адаптивная верстка под мобильные устройства</li>
+                  <li>оптимизация по retina экраны</li>
+                  <li>с Bootstrap и без него</li>
+                  <li>работа c JS</li>
+                  <li>работа с React</li>
+                </ul>
+                <div class="header__skills-button none">
+                  <a href="#" class="button">Смотреть портфолио</a>
+                </div>
+              </div>
 
-                        <div class="header__skills-links" data-aos="fade-left" data-aos-duration="2000">
-                            <div class="header__skills-links-title">
-                                <h3 class="title-h3">На связи:</h3>
-                            </div>
-                            <div class="socials">
-                                <!-- Telegram -->
-                                <a href="https://telegram.me/van_ka88" target="_blank">
-                                    <svg class="socials__icons socials__tg">
-                                        <use href="./img/icons/svgSprite.svg#svg-tg"></use>
-                                    </svg>
-                                </a>
-                                <!--// Telegram -->
-                                <!-- VK -->
-                                <a href="https://vk.com/van_ka1" target="_blank">
-                                    <svg class="socials__icons socials__vk">
-                                        <use href="./img/icons/svgSprite.svg#svg-vk"></use>
-                                    </svg>
-                                </a>
-                                <!--// VK -->
-                                <!-- Facebook -->
-                                <!-- <a href="#" target="_blank">
+              <div
+                class="header__skills-links"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="header__skills-links-title">
+                  <h3 class="title-h3">На связи:</h3>
+                </div>
+                <div class="socials">
+                  <!-- Telegram -->
+                  <a href="https://telegram.me/van_ka88" target="_blank">
+                    <svg class="socials__icons socials__tg">
+                      <use href="./img/icons/svgSprite.svg#svg-tg"></use>
+                    </svg>
+                  </a>
+                  <!--// Telegram -->
+                  <!-- VK -->
+                  <a href="https://vk.com/van_ka1" target="_blank">
+                    <svg class="socials__icons socials__vk">
+                      <use href="./img/icons/svgSprite.svg#svg-vk"></use>
+                    </svg>
+                  </a>
+                  <!--// VK -->
+                  <!-- Facebook -->
+                  <!-- <a href="#" target="_blank">
                     <svg class="socials__icons socials__fb">
                       <use href="./img/icons/svgSprite.svg#svg-fb"></use>
                     </svg>
                   </a> -->
-                                <!--// Facebook -->
-                                <!-- Instagram -->
-                                <!-- <a href="#" target="_blank"
+                  <!--// Facebook -->
+                  <!-- Instagram -->
+                  <!-- <a href="#" target="_blank"
                     ><object
                       class="socials__icons socials__inst"
                       type="image/svg+xml"
@@ -242,347 +283,468 @@
                       height="48"
                     ></object
                   ></a> -->
-                                <!--// Instagram  -->
-                                <!-- Whatsapp -->
-                                <a href="https://wa.me/79119911933" target="_blank">
-                                    <svg class="socials__icons socials__wa">
-                                        <use href="./img/icons/svgSprite.svg#svg-wa"></use>
-                                    </svg>
-                                </a>
-                                <!--// Whatsapp -->
-                            </div>
-                            <div class="header__skills-links-email">
-                                <a href="mailto:spyder34@yandex.ru" class="link" target="_blank">
-                                    spyder34@yandex.ru
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                  <!--// Instagram  -->
+                  <!-- Whatsapp -->
+                  <a href="https://wa.me/79119911933" target="_blank">
+                    <svg class="socials__icons socials__wa">
+                      <use href="./img/icons/svgSprite.svg#svg-wa"></use>
+                    </svg>
+                  </a>
+                  <!--// Whatsapp -->
                 </div>
+                <div class="header__skills-links-email">
+                  <a
+                    href="mailto:spyder34@yandex.ru"
+                    class="link"
+                    target="_blank"
+                  >
+                    spyder34@yandex.ru
+                  </a>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="portfolio__title">
-                    <h2 class="title-h2 gradient-border">Портфолио</h2>
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="portfolio__title">
+            <h2 class="title-h2 gradient-border">Портфолио</h2>
+          </div>
+
+          <div class="portfolio__filter">
+            <button type="button" data-filter="all">Все</button>
+            <button type="button" data-filter=".html">HTML-верстка</button>
+            <button type="button" data-filter=".gulp">Gulp</button>
+            <button type="button" data-filter=".js">JavaScript</button>
+            <button type="button" data-filter=".react">React</button>
+          </div>
+
+          <div class="portfolio__wrapper" id="mix-cards">
+            <!-- First card -->
+            <div class="card mix react" data-order="1">
+              <a
+                href="https://js-server-project-crm.vercel.app/"
+                class="card__link"
+                target="_blank"
+              >
+                <div class="card__img">
+                  <img
+                    src="./img/portfolio/js-serverCRM.png"
+                    alt="react-serverCRM"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
                 </div>
 
-                <div class="portfolio__filter">
-                    <button type="button" data-filter="all">Все</button>
-                    <button type="button" data-filter=".html">HTML-верстка</button>
-                    <button type="button" data-filter=".gulp">Gulp</button>
-                    <button type="button" data-filter=".js">JavaScript</button>
-                    <button type="button" data-filter=".react">React</button>
+                <h5 class="card__title">Проект CRM</h5>
+                <div class="card__description">
+                  <p>CRM проект написанный на React + сервер на Glitch</p>
                 </div>
-
-                <div class="portfolio__wrapper" id="mix-cards">
-
-                    <!-- First card -->
-                    <div class="card mix react" data-order="1">
-                        <a href="https://js-server-project-crm.vercel.app/" class="card__link" target="_blank">
-                            <div class="card__img">
-                                <img src="./img/portfolio/js-serverCRM.png" alt="react-serverCRM" />
-                                <span class="card__button-like">Смотреть проект</span>
-                            </div>
-
-                            <h5 class="card__title">Проект CRM</h5>
-                            <div class="card__description">
-                                <p>CRM проект написанный на React + сервер на Glitch</p>
-                            </div>
-                        </a>
-                        <a class="card__description-link" href="https://github.com/PIE89/-js-server-project-CRM"
-                            target="_blank">Репозиторий на GitHub</a>
-                    </div>
-                    <!--// First card -->
-
-                    <!-- Second card -->
-                    <div class="card mix html js" data-order="2">
-                        <a href="https://flat-project-js-delta.vercel.app/" class="card__link" target="_blank">
-                            <div class="card__img">
-                                <img src="./img/projects/catalog-metr.jpg" srcset="./img/projects/catalog-metr@2x.jpg 2x" alt="flat-project-js" />
-                                <span class="card__button-like">Смотреть проект</span>
-                            </div>
-                            <h5 class="card__title">Проект покупки квартир</h5>
-                            <div class="card__description">
-                                <p>
-                                    SPA приложение написанное на языке JavaScript, архитектурный
-                                    паттерн MVC + запросы на сервер
-                                </p>
-                            </div>
-                        </a>
-                        <a class="card__description-link" href="https://github.com/PIE89/flat-project_js"
-                            target="_blank">Репозиторий на GitHub</a>
-                    </div>
-                    <!--// Second card -->
-
-                    <!-- Third card -->
-                    <div class="card card--small mix html" data-order="3">
-                        <a href="https://pie89.github.io/forest_travel/main.html" class="card__link" target="_blank">
-                            <div class="card__img">
-                                <img src="./img/projects/forest.jpg" srcset="./img/projects/forest@2x.jpg 2x"
-                                    alt="forest_travel" />
-                                <span class="card__button-like">Смотреть проект</span>
-                            </div>
-                            <h5 class="card__title">
-                                Cайт туристического агенства "Форест Трэвел"
-                            </h5>
-                            <div class="card__description">
-                                <p>Верстка сайт</p>
-                            </div>
-                        </a>
-                        <a class="card__description-link" href="https://github.com/PIE89/forest_travel"
-                            target="_blank">Репозиторий на GitHub</a>
-                    </div>
-                    <!--// Third card -->
-
-                    <!-- Forth card -->
-                    <div class="card card--small mix html" data-order="4">
-                        <a href="https://pie89.github.io/unit_project/" class="card__link" target="_blank">
-                            <div class="card__img">
-                                <img src="./img/projects/unit.jpg" srcset="./img/projects/unit@2x.jpg 2x" alt="unit_project" />
-                                <span class="card__button-like">Смотреть проект</span>
-                            </div>
-                            <h5 class="card__title">Верстка лэндинга Unit-project</h5>
-                            <div class="card__description">
-                                <p>
-                                    HTML + SCSS с приминением BEM-naming, мобильная адаптация,
-                                    OWLCarousel(JQuery)
-                                </p>
-                            </div>
-                        </a>
-                        <a class="card__description-link" href="https://github.com/PIE89/unit_project"
-                            target="_blank">Репозиторий на GitHub</a>
-                    </div>
-                    <!--// Forth card -->
-
-                    <!-- Fifth card -->
-                    <div class="card card--small mix gulp js" data-order="5">
-                        <a href="https://booking-site-steel.vercel.app/" class="card__link" target="_blank">
-                            <div class="card__img">
-                                <img src="./img/projects/booking.jpg" srcset="./img/projects/booking@2x.jpg" alt="booking_gulp" />
-                                <span class="card__button-like">Смотреть проект</span>
-                            </div>
-                            <h5 class="card__title">
-                                Проект Booking - система бронирований отелей
-                            </h5>
-                            <div class="card__description">
-                                <p>
-                                    Проект реализован на gulp, bootstrap4 верстка, +
-                                    fancybox(jQuery) - слайдер отображения картинок
-                                </p>
-                            </div>
-                        </a>
-                        <a class="card__description-link" href="https://github.com/PIE89/booking_site"
-                            target="_blank">Репозиторий на GitHub</a>
-                    </div>
-                    <!--// Fifth card -->
-
-                    <!-- Sixth card -->
-                    <div class="card mix html js" data-order="2">
-                        <a href="https://weatherappapp.vercel.app/" class="card__link" target="_blank">
-                            <div class="card__img">
-                                <img src="./img/projects/weather.jpg" srcset="./img/projects/weather@2x.jpg" alt="weatherApp" />
-                                <span class="card__button-like">Смотреть проект</span>
-                            </div>
-                            <h5 class="card__title">Проект прогноза погоды</h5>
-                            <div class="card__description">
-                                <p>
-                                    Проект написанный на html, css + fetch запросы на сервер
-                                </p>
-                            </div>
-                        </a>
-                        <a class="card__description-link" href="https://github.com/PIE89/flat-project_js"
-                            target="_blank">Репозиторий на GitHub</a>
-                    </div>
-                    <!--// Sixth card -->
-
-                    <!-- Seventh card -->
-                    <div class="card mix html js" data-order="5">
-                        <a href="https://pie89.github.io/todo_list_js/" class="card__link" target="_blank">
-                            <div class="card__img">
-                                <img src="./img/portfolio/todo-list.jpeg" alt="todo-list" />
-                                <span class="card__button-like">Смотреть проект</span>
-                            </div>
-                            <h5 class="card__title">ToDO-List</h5>
-                            <div class="card__description">
-                                <p>
-                                    Проект написанные на JavaScript с добавлением данным в
-                                    LocalStorage
-                                </p>
-                            </div>
-                        </a>
-                        <a class="card__description-link" href="https://github.com/PIE89/todo_list_js"
-                            target="_blank">Репозиторий на GitHub</a>
-                    </div>
-                    <!--// Seventh card -->
-
-                    <!-- Eight card -->
-                    <div class="card mix html gulp" data-order="5">
-                        <a href="https://pie89.github.io/slider-reference/" class="card__link" target="_blank">
-                            <div class="card__img">
-                                <img src="./img/portfolio/travel-slider.jpeg" alt="travel-slider" />
-                                <span class="card__button-like">Смотреть проект</span>
-                            </div>
-                            <h5 class="card__title">Travel-Slider</h5>
-                            <div class="card__description">
-                                <p>Проект написанные на Gulp c добавлением Slider</p>
-                            </div>
-                        </a>
-                        <a class="card__description-link" href="https://github.com/PIE89/slider-reference"
-                            target="_blank">Репозиторий на GitHub</a>
-                    </div>
-                    <!--// Eight card -->
-                </div>
+              </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/-js-server-project-CRM"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
             </div>
-        </section>
+            <!--// First card -->
 
-        <section class="timeline" id="timeline">
-            <div class="container">
-                <div class="timeline__title">
-                    <h2 class="title-h2 gradient-border">Как я работаю</h2>
+            <!-- Second card -->
+            <div class="card mix html js" data-order="2">
+              <a
+                href="https://flat-project-js-delta.vercel.app/"
+                class="card__link"
+                target="_blank"
+              >
+                <div class="card__img">
+                  <img
+                    src="./img/projects/catalog-metr.jpg"
+                    srcset="./img/projects/catalog-metr@2x.jpg 2x"
+                    alt="flat-project-js"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
                 </div>
-
-                <div class="timeline__wrapper">
-                    <!-- First step -->
-                    <div class="timeline__step" data-aos="fade-up-right" data-aos-duration="2000">
-                        <div class="step">
-                            <div class="step__title">
-                                <h4 class="title-h4 gradient-border">Оцениваю макет</h4>
-                            </div>
-                            <div class="step__description">
-                                <p>
-                                    Оцениваю объем работы, сложность, нюансы. Задаю вопросы.
-                                </p>
-                                <span class="step__description-time">Время: 2 часа</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--// First step -->
-
-                    <!-- Second step -->
-                    <div class="timeline__step" data-aos="fade-up-left" data-aos-duration="2000">
-                        <div class="step">
-                            <div class="step__title">
-                                <h4 class="title-h4 gradient-border">
-                                    ТЗ, смета и график работ
-                                </h4>
-                            </div>
-                            <div class="step__description">
-                                <p>
-                                    Согласовываем техническое задание и график работ по проекту.
-                                    Осмечиваю стоимость по этапам работы.
-                                </p>
-                                <span class="step__description-time step__description-time--big">Время: 2 - 4
-                                    часа</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--// Second step -->
-
-                    <!-- Third step -->
-                    <div class="timeline__step" data-aos="fade-up-right" data-aos-duration="2000">
-                        <div class="step">
-                            <div class="step__title">
-                                <h4 class="title-h4 gradient-border">
-                                    Вы держите руку на пульсе
-                                </h4>
-                            </div>
-                            <div class="step__description">
-                                <p>
-                                    Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы
-                                    в любое время можете видеть актуальное состояние проекта и
-                                    задач.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--// Third step -->
-
-                    <!-- Forth step -->
-                    <div class="timeline__step" data-aos="fade-up-left" data-aos-duration="2000">
-                        <div class="step">
-                            <div class="step__title step__title--small">
-                                <h4 class="title-h4 gradient-border">Выполняю каждый этап</h4>
-                            </div>
-                            <div class="step__description">
-                                <p>
-                                    Поочередно выполняю каждый этап работы. Передаю результаты.
-                                    Заказчик производит поэтапную оплату.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--// Forth step -->
-
-                    <!-- Fifth step -->
-                    <div class="timeline__step" data-aos="fade-up-right" data-aos-duration="2000">
-                        <div class="step">
-                            <div class="step__title">
-                                <h4 class="title-h4 gradient-border">
-                                    Финальное ревью проекта
-                                </h4>
-                            </div>
-                            <div class="step__description">
-                                <p>
-                                    Проект готов. Финальное ревью и полировка до идеального
-                                    состояния. Передаю файлы проекта, заливаю сайт на хостинг
-                                    заказчика.
-                                </p>
-                                <span class="step__description-time">Время: 2 - 4 часа</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--// Fifth step -->
+                <h5 class="card__title">Проект покупки квартир</h5>
+                <div class="card__description">
+                  <p>
+                    SPA приложение написанное на языке JavaScript, архитектурный
+                    паттерн MVC + запросы на сервер
+                  </p>
                 </div>
+              </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/flat-project_js"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
             </div>
-        </section>
+            <!--// Second card -->
 
-        <section class="contacts" id="contacts">
-            <div class="container">
-                <img src="./img/icons/contacts-icon.svg" class="contacts__dots" alt="contacts-icon" />
-                <div class="contacts__title">
-                    <h2 class="title-h2 gradient-border">Контакты</h2>
+            <!-- Third card -->
+            <div class="card card--small mix html" data-order="3">
+              <a
+                href="https://pie89.github.io/forest_travel/main.html"
+                class="card__link"
+                target="_blank"
+              >
+                <div class="card__img">
+                  <img
+                    src="./img/projects/forest.jpg"
+                    srcset="./img/projects/forest@2x.jpg 2x"
+                    alt="forest_travel"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
                 </div>
-                <div class="contacts__wrapper">
-                    <div class="contacts__information">
-                        <div class="contacts__information-description">
-                            Если вы ищите специалиста по верстке сайтов или frontend
-                            разработчика в команду для работы над проектом — напишите мне.
-                        </div>
-                        <ul class="contacts__information-list">
-                            <li>
-                                <span>Email</span>
-                                <a href="mailto:spyder34@yandex.ru" class="link link--contacts">
-                                    spyder34@yandex.ru
-                                </a>
-                            </li>
-                        </ul>
+                <h5 class="card__title">
+                  Cайт туристического агенства "Форест Трэвел"
+                </h5>
+                <div class="card__description">
+                  <p>Верстка сайт</p>
+                </div>
+              </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/forest_travel"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
+            </div>
+            <!--// Third card -->
 
-                        <div class="socials socials--contacts">
-                            <!-- Telegram -->
-                            <a href="https://telegram.me/van_ka88" target="_blank">
-                                <svg class="socials__icons socials__tg">
-                                    <use href="./img/icons/svgSprite.svg#svg-tg"></use>
-                                </svg>
-                            </a>
-                            <!--// Telegram -->
-                            <!-- VK -->
-                            <a href="https://vk.com/van_ka1" target="_blank">
-                                <svg class="socials__icons socials__vk">
-                                    <use href="./img/icons/svgSprite.svg#svg-vk"></use>
-                                </svg>
-                            </a>
-                            <!--// VK -->
-                            <!-- Facebook -->
-                            <!-- <a href="#">
+            <!-- Forth card -->
+            <div class="card card--small mix html" data-order="4">
+              <a
+                href="https://pie89.github.io/unit_project/"
+                class="card__link"
+                target="_blank"
+              >
+                <div class="card__img">
+                  <img
+                    src="./img/projects/unit.jpg"
+                    srcset="./img/projects/unit@2x.jpg 2x"
+                    alt="unit_project"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+                <h5 class="card__title">Верстка лэндинга Unit-project</h5>
+                <div class="card__description">
+                  <p>
+                    HTML + SCSS с приминением BEM-naming, мобильная адаптация,
+                    OWLCarousel(JQuery)
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/unit_project"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
+            </div>
+            <!--// Forth card -->
+
+            <!-- Fifth card -->
+            <div class="card card--small mix gulp js" data-order="5">
+              <a
+                href="https://booking-site-steel.vercel.app/"
+                class="card__link"
+                target="_blank"
+              >
+                <div class="card__img">
+                  <img
+                    src="./img/projects/booking.jpg"
+                    srcset="./img/projects/booking@2x.jpg"
+                    alt="booking_gulp"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+                <h5 class="card__title">
+                  Проект Booking - система бронирований отелей
+                </h5>
+                <div class="card__description">
+                  <p>
+                    Проект реализован на gulp, bootstrap4 верстка, +
+                    fancybox(jQuery) - слайдер отображения картинок
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/booking_site"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
+            </div>
+            <!--// Fifth card -->
+
+            <!-- Sixth card -->
+            <div class="card mix html js" data-order="2">
+              <a
+                href="https://weatherappapp.vercel.app/"
+                class="card__link"
+                target="_blank"
+              >
+                <div class="card__img">
+                  <img
+                    src="./img/projects/weather.jpg"
+                    srcset="./img/projects/weather@2x.jpg"
+                    alt="weatherApp"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+                <h5 class="card__title">Проект прогноза погоды</h5>
+                <div class="card__description">
+                  <p>
+                    Проект написанный на html, css + fetch запросы на сервер
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/flat-project_js"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
+            </div>
+            <!--// Sixth card -->
+
+            <!-- Seventh card -->
+            <div class="card mix html js" data-order="5">
+              <a
+                href="https://pie89.github.io/todo_list_js/"
+                class="card__link"
+                target="_blank"
+              >
+                <div class="card__img">
+                  <img src="./img/portfolio/todo-list.jpeg" alt="todo-list" />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+                <h5 class="card__title">ToDO-List</h5>
+                <div class="card__description">
+                  <p>
+                    Проект написанные на JavaScript с добавлением данным в
+                    LocalStorage
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/todo_list_js"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
+            </div>
+            <!--// Seventh card -->
+
+            <!-- Eight card -->
+            <div class="card mix html gulp" data-order="5">
+              <a
+                href="https://pie89.github.io/slider-reference/"
+                class="card__link"
+                target="_blank"
+              >
+                <div class="card__img">
+                  <img
+                    src="./img/portfolio/travel-slider.jpeg"
+                    alt="travel-slider"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+                <h5 class="card__title">Travel-Slider</h5>
+                <div class="card__description">
+                  <p>Проект написанные на Gulp c добавлением Slider</p>
+                </div>
+              </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/slider-reference"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
+            </div>
+            <!--// Eight card -->
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline" id="timeline">
+        <div class="container">
+          <div class="timeline__title">
+            <h2 class="title-h2 gradient-border">Как я работаю</h2>
+          </div>
+
+          <div class="timeline__wrapper">
+            <!-- First step -->
+            <div
+              class="timeline__step"
+              data-aos="fade-up-right"
+              data-aos-duration="2000"
+            >
+              <div class="step">
+                <div class="step__title">
+                  <h4 class="title-h4 gradient-border">Оцениваю макет</h4>
+                </div>
+                <div class="step__description">
+                  <p>
+                    Оцениваю объем работы, сложность, нюансы. Задаю вопросы.
+                  </p>
+                  <span class="step__description-time">Время: 2 часа</span>
+                </div>
+              </div>
+            </div>
+            <!--// First step -->
+
+            <!-- Second step -->
+            <div
+              class="timeline__step"
+              data-aos="fade-up-left"
+              data-aos-duration="2000"
+            >
+              <div class="step">
+                <div class="step__title">
+                  <h4 class="title-h4 gradient-border">
+                    ТЗ, смета и график работ
+                  </h4>
+                </div>
+                <div class="step__description">
+                  <p>
+                    Согласовываем техническое задание и график работ по проекту.
+                    Осмечиваю стоимость по этапам работы.
+                  </p>
+                  <span
+                    class="step__description-time step__description-time--big"
+                    >Время: 2 - 4 часа</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!--// Second step -->
+
+            <!-- Third step -->
+            <div
+              class="timeline__step"
+              data-aos="fade-up-right"
+              data-aos-duration="2000"
+            >
+              <div class="step">
+                <div class="step__title">
+                  <h4 class="title-h4 gradient-border">
+                    Вы держите руку на пульсе
+                  </h4>
+                </div>
+                <div class="step__description">
+                  <p>
+                    Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы
+                    в любое время можете видеть актуальное состояние проекта и
+                    задач.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--// Third step -->
+
+            <!-- Forth step -->
+            <div
+              class="timeline__step"
+              data-aos="fade-up-left"
+              data-aos-duration="2000"
+            >
+              <div class="step">
+                <div class="step__title step__title--small">
+                  <h4 class="title-h4 gradient-border">Выполняю каждый этап</h4>
+                </div>
+                <div class="step__description">
+                  <p>
+                    Поочередно выполняю каждый этап работы. Передаю результаты.
+                    Заказчик производит поэтапную оплату.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--// Forth step -->
+
+            <!-- Fifth step -->
+            <div
+              class="timeline__step"
+              data-aos="fade-up-right"
+              data-aos-duration="2000"
+            >
+              <div class="step">
+                <div class="step__title">
+                  <h4 class="title-h4 gradient-border">
+                    Финальное ревью проекта
+                  </h4>
+                </div>
+                <div class="step__description">
+                  <p>
+                    Проект готов. Финальное ревью и полировка до идеального
+                    состояния. Передаю файлы проекта, заливаю сайт на хостинг
+                    заказчика.
+                  </p>
+                  <span class="step__description-time">Время: 2 - 4 часа</span>
+                </div>
+              </div>
+            </div>
+            <!--// Fifth step -->
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <img
+            src="./img/icons/contacts-icon.svg"
+            class="contacts__dots"
+            alt="contacts-icon"
+          />
+          <div class="contacts__title">
+            <h2 class="title-h2 gradient-border">Контакты</h2>
+          </div>
+          <div class="contacts__wrapper">
+            <div class="contacts__information">
+              <div class="contacts__information-description">
+                Если вы ищите специалиста по верстке сайтов или frontend
+                разработчика в команду для работы над проектом — напишите мне.
+              </div>
+              <ul class="contacts__information-list">
+                <li>
+                  <span>Email</span>
+                  <a
+                    href="mailto:spyder34@yandex.ru"
+                    class="link link--contacts"
+                  >
+                    spyder34@yandex.ru
+                  </a>
+                </li>
+              </ul>
+
+              <div class="socials socials--contacts">
+                <!-- Telegram -->
+                <a href="https://telegram.me/van_ka88" target="_blank">
+                  <svg class="socials__icons socials__tg">
+                    <use href="./img/icons/svgSprite.svg#svg-tg"></use>
+                  </svg>
+                </a>
+                <!--// Telegram -->
+                <!-- VK -->
+                <a href="https://vk.com/van_ka1" target="_blank">
+                  <svg class="socials__icons socials__vk">
+                    <use href="./img/icons/svgSprite.svg#svg-vk"></use>
+                  </svg>
+                </a>
+                <!--// VK -->
+                <!-- Facebook -->
+                <!-- <a href="#">
                   <svg class="socials__icons socials__fb">
                     <use href="./img/icons/svgSprite.svg#svg-fb"></use>
                   </svg>
                 </a> -->
-                            <!--// Facebook -->
-                            <!-- Instagram -->
-                            <!-- <a href="#"
+                <!--// Facebook -->
+                <!-- Instagram -->
+                <!-- <a href="#"
                   ><object
                     class="socials__icons socials__inst"
                     type="image/svg+xml"
@@ -591,65 +753,76 @@
                     height="48"
                   ></object
                 ></a> -->
-                            <!--// Instagram  -->
-                            <!-- Whatsapp -->
-                            <a href="https://wa.me/79119911933" target="_blank">
-                                <svg class="socials__icons socials__wa">
-                                    <use href="./img/icons/svgSprite.svg#svg-wa"></use>
-                                </svg>
-                            </a>
-                            <!--// Whatsapp -->
-                        </div>
-                    </div>
-
-                    <div class="contacts__form">
-                        <form class="form">
-                            <div class="form__group">
-                                <span class="form__fake-placeholder form__fake-placeholder--email">Ваш Email</span>
-                                <input type="email" class="form__data form__data--input" name="email" />
-                            </div>
-
-                            <div class="form__group">
-                                <span class="form__fake-placeholder">Сообщение</span>
-                                <textarea name="message" id="message" class="form__data"></textarea>
-                            </div>
-
-                            <div class="form__group">
-                                <button type="submit" class="button button--accent">
-                                    Отправить
-                                </button>
-                            </div>
-                        </form>
-                        <div id="answer"></div>
-                    </div>
-                </div>
+                <!--// Instagram  -->
+                <!-- Whatsapp -->
+                <a href="https://wa.me/79119911933" target="_blank">
+                  <svg class="socials__icons socials__wa">
+                    <use href="./img/icons/svgSprite.svg#svg-wa"></use>
+                  </svg>
+                </a>
+                <!--// Whatsapp -->
+              </div>
             </div>
-        </section>
+
+            <div class="contacts__form">
+              <form class="form">
+                <div class="form__group">
+                  <span
+                    class="form__fake-placeholder form__fake-placeholder--email"
+                    >Ваш Email</span
+                  >
+                  <input
+                    type="email"
+                    class="form__data form__data--input"
+                    name="email"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <span class="form__fake-placeholder">Сообщение</span>
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="form__data"
+                  ></textarea>
+                </div>
+
+                <div class="form__group">
+                  <button type="submit" class="button button--accent">
+                    Отправить
+                  </button>
+                </div>
+              </form>
+              <div id="answer"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer__copyright">&#169; 2024 — Иван Попов</div>
-            <div class="footer__description">
-                <p>
-                    Веб-разработчик из Санкт-Петербурга, занимаюсь версткой и созданием
-                    сайтов.
-                </p>
-                <p>
-                    Этот сайт сделал в рамках прохождения обучения по верстке на курсах
-                    от <a href="#" class="white-link">WebCademy.ru</a>
-                </p>
-            </div>
+      <div class="container">
+        <div class="footer__copyright">&#169; 2024 — Иван Попов</div>
+        <div class="footer__description">
+          <p>
+            Веб-разработчик из Санкт-Петербурга, занимаюсь версткой и созданием
+            сайтов.
+          </p>
+          <p>
+            Этот сайт сделал в рамках прохождения обучения по верстке на курсах
+            от <a href="#" class="white-link">WebCademy.ru</a>
+          </p>
         </div>
+      </div>
     </footer>
 
     <a href="#top" class="back-top">&#8593;</a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            once: true,
-        });
+      AOS.init({
+        once: true,
+      });
     </script>
     <script src="./libs/jquery-3.7.1.min.js"></script>
     <script src="./libs/jquery.validate.min.js"></script>
@@ -659,6 +832,5 @@
     <script src="./js/mixItUp.js"></script>
     <script src="./js/parallax.js"></script>
     <script src="./js/button-scroll.js"></script>
-</body>
-
+  </body>
 </html>
