@@ -481,7 +481,7 @@
             <!--// Fifth card -->
 
             <!-- Sixth card -->
-            <div class="card mix html js" data-order="2">
+            <div class="card mix html js" data-order="6">
               <a
                 href="https://weatherappapp.vercel.app/"
                 class="card__link"
@@ -512,7 +512,7 @@
             <!--// Sixth card -->
 
             <!-- Seventh card -->
-            <div class="card mix html js" data-order="5">
+            <div class="card mix html js" data-order="7">
               <a
                 href="https://pie89.github.io/todo_list_js/"
                 class="card__link"
@@ -540,7 +540,7 @@
             <!--// Seventh card -->
 
             <!-- Eight card -->
-            <div class="card mix html gulp" data-order="5">
+            <div class="card mix html gulp" data-order="8">
               <a
                 href="https://pie89.github.io/slider-reference/"
                 class="card__link"
@@ -566,6 +566,34 @@
               >
             </div>
             <!--// Eight card -->
+
+            <!-- Nineth card -->
+            <div class="card mix html gulp js" data-order="9">
+              <a
+                href="https://pie89.github.io/travel-agent/"
+                class="card__link"
+                target="_blank"
+              >
+                <div class="card__img">
+                  <img
+                    src="./img/portfolio/travel-agent.png"
+                    alt="travel-agent"
+                  />
+                  <span class="card__button-like">Смотреть проект</span>
+                </div>
+                <h5 class="card__title">Travel-Slider</h5>
+                <div class="card__description">
+                  <p>Проект написанные на Gulp c добавлением двух Slider</p>
+                </div>
+              </a>
+              <a
+                class="card__description-link"
+                href="https://github.com/PIE89/travel-agent"
+                target="_blank"
+                >Репозиторий на GitHub</a
+              >
+            </div>
+            <!--// Nineth card -->
           </div>
         </div>
       </section>
@@ -765,16 +793,17 @@
             </div>
 
             <div class="contacts__form">
-              <form class="form">
+              <form class="form" id="form">
                 <div class="form__group">
                   <span
                     class="form__fake-placeholder form__fake-placeholder--email"
                     >Ваш Email</span
                   >
                   <input
+                    name="email"
                     type="email"
                     class="form__data form__data--input"
-                    name="email"
+                    required
                   />
                 </div>
 
@@ -793,7 +822,16 @@
                   </button>
                 </div>
               </form>
-              <div id="answer"></div>
+              <div id="success" hidden role="alert">
+                <h2>
+                  Заявка принята!<br />
+                  Мы свяжемся с&nbsp;Вами в&nbsp;ближайшее время!
+                </h2>
+              </div>
+              <div id="error" hidden role="alert">
+                Что-то пошло не так. Соообщение не было отправлено. Попробуйте
+                еще раз.
+              </div>
             </div>
           </div>
         </div>
@@ -828,9 +866,9 @@
     <script src="./libs/jquery.validate.min.js"></script>
     <script src="./libs/mixitup.min.js"></script>
     <script src="./js/mobile-nav.js"></script>
-    <script src="./js/contacts.js"></script>
     <script src="./js/mixItUp.js"></script>
     <script src="./js/parallax.js"></script>
     <script src="./js/button-scroll.js"></script>
+    <script src="./js/sendForm.js"></script>
   </body>
 </html>
